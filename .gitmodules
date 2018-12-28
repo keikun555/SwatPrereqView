@@ -1,0 +1,3 @@
+[submodule "scraper"]
+	path = scraper
+	url = git@github.com:keikun555/swat_course_scraper.git
