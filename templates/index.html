@@ -19,19 +19,24 @@
 <body>
   <div>
 		<!-- upper layer -->
-		<div style="position: relative; z-index: 1; padding-left: 20px">
-			<!-- header -->
-			<h1 class="ui header" style="padding-top: 20px;">
-				Prerequisites for <div id="term"></div>
-			</h1>
-			<!-- search box -->
-	    <div id="search" class="search ui center">
-				<div class="ui icon input">
-	        <input class="prompt" type="text" placeholder="Search for Courses">
-	        <i class="search icon"></i>
-	      </div>
-	      <div class="results"></div>
-	    </div>
+		<div class="ui two column doubling stackable grid container" style="position: relative; z-index: 1; padding-top: 20px">
+			<div class="column">
+  			<!-- header -->
+  			<h1 class="ui header">
+  				Prerequisites for <div id="term"></div>
+  			</h1>
+  			<!-- search box -->
+  	    <div id="search" class="search ui center">
+  				<div class="ui icon input">
+  	        <input class="prompt" type="text" placeholder="Search for Courses">
+  	        <i class="search icon"></i>
+  	      </div>
+  	      <div class="results"></div>
+  	    </div>
+			</div>
+			<div class="column">
+  			<div class="ui segment" id="description" style="white-space: pre-wrap;"></div>
+			</div>
 		</div>
 		<!-- graph -->
     <div id="graph"></div>

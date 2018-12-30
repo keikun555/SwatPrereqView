@@ -24,7 +24,7 @@ def main():
 def get_next_frame():
     ''' gets graph data '''
     with app.open_resource(GRAPH_PATH) as gf:
-        graph = json.load(gf)
+        graph = json.loads(gf.read().decode('utf-8'))
     return jsonify(graph)
 
 

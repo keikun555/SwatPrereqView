@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$('#description').hide();
   $.when(loadData().done(function(graph_data) {
 		var depts = graph_data[0];
 		var allNodes = graph_data[1];
@@ -104,6 +105,15 @@ function update_network(term, termTextElem, container, options, allNodes, allEdg
 	}
 	var network = new vis.Network(container, data, options);
 	termTextElem.text(name);
+	network.on('click', function(params) {
+		if(params.nodes.length > 0) {
+			var clicked_desc = data.nodes.get(params.nodes[0])['desc'];
+			$('#description').text(clicked_desc);
+			$('#description').show();
+		} else {
+			$('#description').hide();
+		}
+	});
 	network.on('doubleClick', function(params) {
 		if(params.nodes.length > 0) {
 			var clicked_term = {
