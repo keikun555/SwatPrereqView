@@ -47,6 +47,7 @@ def extract_node(cdict):
     return {
         'id': node_id,
         'label': node_label,
+        'desc': cdict['text'][len(cdict['course'])+2:],
         'font': {'size': 30},
         'shape': 'box',
         'dept': cdict['course'].split()[0],
