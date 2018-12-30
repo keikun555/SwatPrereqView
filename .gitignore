@@ -1,5 +1,5 @@
 # data (this takes some space)
-static/data/*
+static/data/*.json
 
 # vim files
 *.sw[a-z]
