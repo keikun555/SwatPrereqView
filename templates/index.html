@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Prereq View</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- semantic ui -->
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+	<!-- vis.js -->
+  <script src="{{ url_for('static', filename='vis/vis.min.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vis/vis.min.css') }}">
+  <!-- script -->
+  <script async src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+  <div>
+		<!-- upper layer -->
+		<div style="position: relative; z-index: 1; padding-left: 20px">
+			<!-- header -->
+			<h1 class="ui header" style="padding-top: 20px;">
+				Prerequisites for <div id="term"></div>
+			</h1>
+			<!-- search box -->
+	    <div id="search" class="search ui center">
+				<div class="ui icon input">
+	        <input class="prompt" type="text" placeholder="Search for Courses">
+	        <i class="search icon"></i>
+	      </div>
+	      <div class="results"></div>
+	    </div>
+		</div>
+		<!-- graph -->
+    <div id="graph"></div>
+  </div>
+</body>
+
+</html>
