@@ -17,6 +17,20 @@
 </head>
 
 <body>
+	<!-- help popup -->
+	<div id="helpPopup" class="ui custom popup transition hidden">
+		<h2>PrereqView</h2>
+		<p>Hey there! Thanks for using PrereqView! Here are some tips on how to use this tool:</p>
+		<div class="ui bulleted list">
+			<div class="item">Search for classes or departments in the search box above!</div>
+			<div class="item">Click once on a course to see its description</div>
+			<div class="item">Double click on a course to isolate it</div>
+			<div class="item">Zoom in/out by scrolling</div>
+			<div class="item">Click and drag to move around</div>
+		</div>
+		<p>Have an awesome time finding what it takes to take your dream course!</p>
+		<p>-Kei '20</p>
+	</div>
   <div>
 		<!-- upper layer -->
 		<div class="ui two column doubling stackable grid container" style="position: relative; z-index: 1; padding-top: 20px">
@@ -25,8 +39,11 @@
   			<h1 class="ui header">
   				Prerequisites for <div id="term"></div>
   			</h1>
-  			<!-- search box -->
+  			<!-- search box with instructions -->
   	    <div id="search" class="search ui center">
+					<button class="circular ui icon button" id="helpButton">
+						<i class="question icon"></i>
+					</button>
   				<div class="ui icon input">
   	        <input class="prompt" type="text" placeholder="Search for Courses">
   	        <i class="search icon"></i>

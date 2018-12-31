@@ -34,6 +34,11 @@ $(document).ready(function() {
 		'left':     '0',
 		'z-index':  '0'
 	});
+	$('#helpButton').popup({
+		popup: $('#helpPopup'),
+		on: 'click',
+		position: 'bottom left'
+	});
 })
 
 function setupSearch(content, termTextElem, container, options, allNodes, allEdges) {
