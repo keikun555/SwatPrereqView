@@ -33,7 +33,7 @@
 	</div>
   <div>
 		<!-- upper layer -->
-		<div class="ui two column doubling stackable grid container" style="position: relative; z-index: 1; padding-top: 20px">
+		<div class="ui two column doubling stackable grid container" style="position: relative; z-index: 1; padding-top: 20px; pointer-events: none;">
 			<div class="column">
   			<!-- header -->
   			<h1 class="ui header">
@@ -41,10 +41,10 @@
   			</h1>
   			<!-- search box with instructions -->
   	    <div id="search" class="search ui center">
-					<button class="circular ui icon button" id="helpButton">
+					<button class="circular ui icon button" id="helpButton" style="pointer-events: auto;">
 						<i class="question icon"></i>
 					</button>
-  				<div class="ui icon input">
+  				<div class="ui icon input" style="pointer-events: auto;">
   	        <input class="prompt" type="text" placeholder="Search for Courses">
   	        <i class="search icon"></i>
   	      </div>
