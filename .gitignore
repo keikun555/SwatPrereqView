@@ -1,3 +1,6 @@
+# virtual environment
+SwatPrereqView
+
 # data (this takes some space)
 static/data/*.json
 
