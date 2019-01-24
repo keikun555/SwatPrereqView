@@ -6,3 +6,9 @@ Architecture:
   * vis.js for network graphics
   * vis.js network data as a JSON file
   * Semantic UI for website formatting
+
+Requirements:
+  * Python3 preferred with these libraries
+    * `bs4`
+    * `requests`
+    * `lxml`
